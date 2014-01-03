@@ -14,9 +14,10 @@ class HeadsTempEdisonComp extends KevoreeEntities.AbstractComponent {
 
       if (!this.dic_test){
         var m = require('mraa'); //require mraa
-        this.log.info('MRAA Version: ' + m.getVersion(), 'start');
+        this.log.info(this.toString(),'MRAA Version: ' + m.getVersion());
         var analogPin0 = new m.Aio(0);
-        this.timerToken = setInterval(() => this.out_out(analogPin0.read()), this.dic_period);
+        this.timerToken = setInterval(() => {var value = analogPin0.read(); this.log.info(this.toString(), value); this.out_out(value)} , this.dic_period);
+
       }else{
         this.timerToken = setInterval(() => this.log.info(this.toString(), 'toto'), this.dic_period);
       }
