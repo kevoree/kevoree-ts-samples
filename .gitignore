@@ -1,0 +1,4 @@
+# IntelliJ IDEA
+.idea
+**/node_modules
+**/.deploy_units

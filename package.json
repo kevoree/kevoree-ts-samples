@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-typescript": "^0.6.1",
+    "kevoree-entities": "^8.0.2"
+  }
+}
