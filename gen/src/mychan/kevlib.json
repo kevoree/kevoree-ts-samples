@@ -1,0 +1,57 @@
+{
+    "class": "org.kevoree.ContainerRoot@0.106258309446275231426006618496",
+    "generated_KMF_ID": "0.106258309446275231426006618496",
+    "nodes": [],
+    "repositories": [],
+    "hubs": [],
+    "mBindings": [],
+    "groups": [],
+    "packages": [
+        {
+            "class": "org.kevoree.Package@example",
+            "name": "example",
+            "packages": [],
+            "typeDefinitions": [
+                {
+                    "class": "org.kevoree.ChannelType@name=MyChan,version=0.1.0",
+                    "upperFragments": "0",
+                    "abstract": "false",
+                    "upperBindings": "0",
+                    "lowerBindings": "0",
+                    "lowerFragments": "0",
+                    "name": "MyChan",
+                    "version": "0.1.0",
+                    "deployUnits": [
+                        "packages[example]/deployUnits[hashcode=,name=kevoree-chan-mychan,version=0.1.0]"
+                    ],
+                    "superTypes": [],
+                    "dictionaryType": [
+                        {
+                            "class": "org.kevoree.DictionaryType@0.067619675770401951426006618506",
+                            "generated_KMF_ID": "0.067619675770401951426006618506",
+                            "attributes": []
+                        }
+                    ],
+                    "metaData": []
+                }
+            ],
+            "deployUnits": [
+                {
+                    "class": "org.kevoree.DeployUnit@hashcode=,name=kevoree-chan-mychan,version=0.1.0",
+                    "name": "kevoree-chan-mychan",
+                    "hashcode": "",
+                    "url": "",
+                    "version": "0.1.0",
+                    "requiredLibs": [],
+                    "filters": [
+                        {
+                            "class": "org.kevoree.Value@platform",
+                            "name": "platform",
+                            "value": "javascript"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

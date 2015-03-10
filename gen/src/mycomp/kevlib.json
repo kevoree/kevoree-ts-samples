@@ -1,0 +1,84 @@
+{
+    "class": "org.kevoree.ContainerRoot@0.70123428711667661426002343045",
+    "generated_KMF_ID": "0.70123428711667661426002343045",
+    "nodes": [],
+    "repositories": [],
+    "hubs": [],
+    "mBindings": [],
+    "groups": [],
+    "packages": [
+        {
+            "class": "org.kevoree.Package@example",
+            "name": "example",
+            "packages": [],
+            "typeDefinitions": [
+                {
+                    "class": "org.kevoree.ComponentType@name=MyComp,version=0.1.0",
+                    "abstract": "false",
+                    "name": "MyComp",
+                    "version": "0.1.0",
+                    "deployUnits": [
+                        "packages[example]/deployUnits[hashcode=,name=kevoree-comp-mycomp,version=0.1.0]"
+                    ],
+                    "superTypes": [],
+                    "dictionaryType": [
+                        {
+                            "class": "org.kevoree.DictionaryType@0.0453908347990363841426002343058",
+                            "generated_KMF_ID": "0.0453908347990363841426002343058",
+                            "attributes": [
+                                {
+                                    "class": "org.kevoree.DictionaryAttribute@msg",
+                                    "fragmentDependant": "false",
+                                    "optional": "true",
+                                    "name": "msg",
+                                    "state": "false",
+                                    "datatype": "STRING",
+                                    "defaultValue": "",
+                                    "genericTypes": []
+                                }
+                            ]
+                        }
+                    ],
+                    "metaData": [],
+                    "required": [
+                        {
+                            "class": "org.kevoree.PortTypeRef@out",
+                            "noDependency": "true",
+                            "optional": "true",
+                            "name": "out",
+                            "ref": [],
+                            "mappings": []
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "class": "org.kevoree.PortTypeRef@in",
+                            "noDependency": "true",
+                            "optional": "true",
+                            "name": "in",
+                            "ref": [],
+                            "mappings": []
+                        }
+                    ]
+                }
+            ],
+            "deployUnits": [
+                {
+                    "class": "org.kevoree.DeployUnit@hashcode=,name=kevoree-comp-mycomp,version=0.1.0",
+                    "name": "kevoree-comp-mycomp",
+                    "hashcode": "",
+                    "url": "",
+                    "version": "0.1.0",
+                    "requiredLibs": [],
+                    "filters": [
+                        {
+                            "class": "org.kevoree.Value@platform",
+                            "name": "platform",
+                            "value": "javascript"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
