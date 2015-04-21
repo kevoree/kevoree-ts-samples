@@ -12,7 +12,6 @@
     },
     "filesGlob": [
         "./**/*.ts",
-        "../../../../typings/**/*.ts",
         "../../../../*.ts",
         "!./node_modules/**/*.ts",
         "!../../../../node_modules/**/*.ts"
