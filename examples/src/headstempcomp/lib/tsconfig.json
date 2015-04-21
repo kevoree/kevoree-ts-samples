@@ -7,13 +7,21 @@
         "noImplicitAny": false,
         "removeComments": true,
         "noLib": false,
+        "noResolve": true,
         "outDir": "./../../../../gen/src/headstempcomp/lib/"
     },
     "filesGlob": [
         "./**/*.ts",
-        "!./node_modules/**/*.ts"
+        "../../../../typings/**/*.ts",
+        "../../../../*.ts",
+        "!./node_modules/**/*.ts",
+        "!../../../../node_modules/**/*.ts"
     ],
     "files": [
-        "./HeadsTempEdisonComp.ts"
+        "./HeadsTempEdisonComp.ts",
+        "./mraa.d.ts",
+        "./typings/node/node.d.ts",
+        "../../../../kevoree-commons.d.ts",
+        "../../../../kevoree-entities.d.ts"
     ]
 }
