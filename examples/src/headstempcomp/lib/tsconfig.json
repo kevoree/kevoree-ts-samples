@@ -1,13 +1,18 @@
 {
+    "version": "1.4.1",
     "compilerOptions": {
+        "target": "es5",
         "module": "commonjs",
-        "noImplicitAny": true,
+        "declaration": false,
+        "noImplicitAny": false,
         "removeComments": true,
-        "preserveConstEnums": true,
-        "out": "../../built/local/tsc.js",
-        "sourceMap": true,
+        "noLib": false
     },
+    "filesGlob": [
+        "./**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
     "files": [
-        "HeadsTempEdisonComp.ts"
+        "./HeadsTempEdisonComp.ts"
     ]
 }
