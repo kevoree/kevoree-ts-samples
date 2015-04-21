@@ -42,8 +42,10 @@ class HeadsTempEdisonComp extends KevoreeEntities.AbstractComponent {
     done();
   }
 
-  in_in(msg: string): void {
+  in_getValue(msg: string): void {
     this.log.info(this.toString(), 'incoming msg: ' + msg);
+    var value = this.analogPin0.read();
+    this.out_out("" + value) 
   }
 
   out_out(msg: string): void { }
