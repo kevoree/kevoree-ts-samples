@@ -10,17 +10,22 @@ class HeadsTempEdisonComp extends KevoreeEntities.AbstractComponent {
   analogPin0: mraa.Aio;
   start(done: (e?: Error) => void): void {
 
+
+
     this.log.info(this.toString(), 'start');
     var test = this.dictionary.getBoolean('test',true);
     var period = this.dictionary.getNumber('period',500);
+
+
     if (!test) {
+
       //var mraa = require('mraa'); //require mraa
       this.log.info(this.toString(), 'MRAA Version: ' + mraa.getVersion());
       this.analogPin0 = new mraa.Aio(0);
       this.timerToken = setInterval(() => { var value = this.analogPin0.read(); this.log.info(this.toString(), "" + value); this.out_out("" + value) }, period);
 
     } else {
-      this.timerToken = setInterval(() => this.log.info(this.toString(), 'toto'), period);
+      this.timerToken = setInterval(() => this.log.info(this.toString(),  ""+parseInt(""+((Math.random()*60)-20),10)), period);
     }
     done();
   }
@@ -39,7 +44,7 @@ class HeadsTempEdisonComp extends KevoreeEntities.AbstractComponent {
     if (!test) {
       this.timerToken = setInterval(() => { var value = this.analogPin0.read(); this.log.info(this.toString(), "" + value); this.out_out("" + value) }, period);
     } else {
-      this.timerToken = setInterval(() => this.log.info(this.toString(), 'toto'), period);
+      this.timerToken = setInterval(() => this.log.info(this.toString(), ""+Math.random()), period);
     }
     done();
   }
