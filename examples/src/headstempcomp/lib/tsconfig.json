@@ -17,7 +17,10 @@
         "!../../../../node_modules/**/*.ts"
     ],
     "files": [
-        "./HeadsTempEdisonComp.ts",
+        "./HeadsAnalogSensorComp.ts",
+        "./HeadsDigitalWriteComp.ts",
+        "./HeadsLCDDisplayComp.ts",
+        "./jsupm_i2clcd.d.ts",
         "./mraa.d.ts",
         "./typings/node/node.d.ts",
         "../../../../kevoree-commons.d.ts",

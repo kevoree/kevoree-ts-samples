@@ -2,7 +2,7 @@
 /**
      * Created by barais on 20/01/15.
      */
-declare module mraa {
+declare module mraa { 
   function getVersion(): string;
   function setPriority(priority: number): number;
   function getPlatformType(): mraa_platform_t;
