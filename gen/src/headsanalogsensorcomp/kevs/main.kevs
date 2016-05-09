@@ -1,0 +1,8 @@
+add node0 : JavascriptNode
+add sync : WSGroup
+add node0.myComp : example.HeadsAnalogSensorComp
+
+attach node0 sync
+set sync.port/node0 = "9000"
+set node0.myComp.test = "true"
+set node0.myComp.period = "1000"

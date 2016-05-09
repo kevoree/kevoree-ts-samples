@@ -1,0 +1,31 @@
+{
+    "version": "1.4.1",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "noResolve": true,
+        "outDir": "./../../../../gen/src/headsanalogsensorcomp/lib/"
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "../../../../*.ts",
+        "../../../../typings/**/*.ts",
+        "!./node_modules/**/*.ts",
+        "!../../../../node_modules/**/*.ts"
+    ],
+    "files": [
+        "./HeadsAnalogSensorComp.ts",
+        "../../../../kevoree-commons.d.ts",
+        "../../../../kevoree-entities.d.ts",
+        "../../../../typings/jsupm_i2clcd.d.ts",
+        "../../../../typings/mraa.d.ts",
+        "../../../../typings/node/node.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}

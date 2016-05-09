@@ -1,0 +1,94 @@
+{
+    "class": "org.kevoree.ContainerRoot@0.30471884110011161434706159872",
+    "generated_KMF_ID": "0.30471884110011161434706159872",
+    "nodes": [],
+    "repositories": [],
+    "hubs": [],
+    "mBindings": [],
+    "groups": [],
+    "packages": [
+        {
+            "class": "org.kevoree.Package@example",
+            "name": "example",
+            "packages": [],
+            "typeDefinitions": [
+                {
+                    "class": "org.kevoree.ComponentType@name=HeadsTempEdisonComp,version=0.1.0",
+                    "abstract": "false",
+                    "name": "HeadsTempEdisonComp",
+                    "version": "0.1.0",
+                    "deployUnits": [
+                        "packages[example]/deployUnits[hashcode=,name=kevoree-comp-headstempcomp,version=0.1.0]"
+                    ],
+                    "superTypes": [],
+                    "dictionaryType": [
+                        {
+                            "class": "org.kevoree.DictionaryType@0.090922033414244651434706159891",
+                            "generated_KMF_ID": "0.090922033414244651434706159891",
+                            "attributes": [
+                                {
+                                    "class": "org.kevoree.DictionaryAttribute@period",
+                                    "fragmentDependant": "false",
+                                    "optional": "true",
+                                    "name": "period",
+                                    "state": "false",
+                                    "datatype": "STRING",
+                                    "defaultValue": "500",
+                                    "genericTypes": []
+                                },
+                                {
+                                    "class": "org.kevoree.DictionaryAttribute@test",
+                                    "fragmentDependant": "false",
+                                    "optional": "true",
+                                    "name": "test",
+                                    "state": "false",
+                                    "datatype": "BOOLEAN",
+                                    "defaultValue": "",
+                                    "genericTypes": []
+                                }
+                            ]
+                        }
+                    ],
+                    "metaData": [],
+                    "required": [
+                        {
+                            "class": "org.kevoree.PortTypeRef@out",
+                            "noDependency": "true",
+                            "optional": "true",
+                            "name": "out",
+                            "ref": [],
+                            "mappings": []
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "class": "org.kevoree.PortTypeRef@getValue",
+                            "noDependency": "true",
+                            "optional": "true",
+                            "name": "getValue",
+                            "ref": [],
+                            "mappings": []
+                        }
+                    ]
+                }
+            ],
+            "deployUnits": [
+                {
+                    "class": "org.kevoree.DeployUnit@hashcode=,name=kevoree-comp-headstempcomp,version=0.1.0",
+                    "name": "kevoree-comp-headstempcomp",
+                    "hashcode": "",
+                    "url": "",
+                    "version": "0.1.0",
+                    "requiredLibs": [],
+                    "filters": [
+                        {
+                            "class": "org.kevoree.Value@platform",
+                            "name": "platform",
+                            "value": "javascript"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
