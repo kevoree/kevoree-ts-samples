@@ -15,8 +15,17 @@ module.exports = function(grunt) {
                     declaration: false
                 }
             }
-        }
+        },
+ kevoree_registry: {
+    options: {
+      type: 'json',
+      host: 'registry.kevoree.org',
+      port: 80
+    },
+    src: 'kevlib.json'
+  }
     });
+
 
     // These plugins provide necessary tasks.
     grunt.loadNpmTasks('grunt-typescript');
