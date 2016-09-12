@@ -1,5 +1,7 @@
 ### IMPORTANT CHANGES TO THIS REPO
 
+:warning: This repo used to be **kevoree/kevoree-js.d.ts**
+
 :warning: This repo is now only a list of Kevoree TypeScript sample projects.  
 
 If you want your Kevoree project to get TypeScript Definition files for the API, you just have to run `npm install kevoree-entities` because its `package.json` defines the `typings` correctly.
