@@ -1,0 +1,11 @@
+add node0: JavascriptNode/LATEST/LATEST
+add node0.ticker: Ticker/LATEST/LATEST
+add node0.proxy: example.SimpleProxy/1/LATEST
+add node0.printer: ConsolePrinter/LATEST/LATEST
+add chan0, chan1: LocalChannel/LATEST/LATEST
+
+bind node0.ticker.tick chan0
+bind node0.proxy.onMessage chan0
+
+bind node0.proxy.proxy chan1
+bind node0.printer.input chan1

@@ -1,0 +1,70 @@
+{
+    "class": "root:org.kevoree.ContainerRoot@0.6629470491316171473682708654",
+    "generated_KMF_ID": "0.6629470491316171473682708654",
+    "nodes": [],
+    "repositories": [],
+    "hubs": [],
+    "mBindings": [],
+    "groups": [],
+    "packages": [
+        {
+            "class": "org.kevoree.Package@example",
+            "name": "example",
+            "packages": [],
+            "typeDefinitions": [
+                {
+                    "class": "org.kevoree.ComponentType@name=KevsSubmit,version=1",
+                    "abstract": "false",
+                    "name": "KevsSubmit",
+                    "version": "1",
+                    "deployUnits": [
+                        "/packages[example]/deployUnits[hashcode=94ad0fe50cde3d0aca5a3989a8bcd0bc,name=kevoree-comp-submitkevs,version=1.0.0]"
+                    ],
+                    "superTypes": [],
+                    "dictionaryType": [
+                        {
+                            "class": "org.kevoree.DictionaryType@0.0",
+                            "generated_KMF_ID": "0.0",
+                            "attributes": []
+                        }
+                    ],
+                    "metaData": [
+                        {
+                            "class": "org.kevoree.Value@description",
+                            "name": "description",
+                            "value": "Kevoree component that submits input messages as KevScript"
+                        }
+                    ],
+                    "required": [],
+                    "provided": [
+                        {
+                            "class": "org.kevoree.PortTypeRef@submit",
+                            "noDependency": "true",
+                            "optional": "true",
+                            "name": "submit",
+                            "ref": [],
+                            "mappings": []
+                        }
+                    ]
+                }
+            ],
+            "deployUnits": [
+                {
+                    "class": "org.kevoree.DeployUnit@hashcode=94ad0fe50cde3d0aca5a3989a8bcd0bc,name=kevoree-comp-submitkevs,version=1.0.0",
+                    "name": "kevoree-comp-submitkevs",
+                    "hashcode": "94ad0fe50cde3d0aca5a3989a8bcd0bc",
+                    "url": "",
+                    "version": "1.0.0",
+                    "requiredLibs": [],
+                    "filters": [
+                        {
+                            "class": "org.kevoree.Value@platform",
+                            "name": "platform",
+                            "value": "js"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

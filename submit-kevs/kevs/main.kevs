@@ -1,0 +1,8 @@
+add node0: JavascriptNode/LATEST/LATEST
+add node0.kevs: example.KevsSubmit/1/LATEST
+add chan: RemoteWSChan/LATEST/LATEST
+
+set chan.host = 'ws.kevoree.org'
+set chan.uuid = '123456897456'
+
+bind node0.kevs.submit chan

@@ -1,0 +1,90 @@
+{
+    "class": "root:org.kevoree.ContainerRoot@0.77570053352974361473684960786",
+    "generated_KMF_ID": "0.77570053352974361473684960786",
+    "nodes": [],
+    "repositories": [],
+    "hubs": [],
+    "mBindings": [],
+    "groups": [],
+    "packages": [
+        {
+            "class": "org.kevoree.Package@example",
+            "name": "example",
+            "packages": [],
+            "typeDefinitions": [
+                {
+                    "class": "org.kevoree.ComponentType@name=SimpleProxy,version=1",
+                    "abstract": "false",
+                    "name": "SimpleProxy",
+                    "version": "1",
+                    "deployUnits": [
+                        "/packages[example]/deployUnits[hashcode=20dd759137fb8fd6960687ba6297be81,name=kevoree-comp-simpleproxy,version=1.0.0]"
+                    ],
+                    "superTypes": [],
+                    "dictionaryType": [
+                        {
+                            "class": "org.kevoree.DictionaryType@0.0",
+                            "generated_KMF_ID": "0.0",
+                            "attributes": [
+                                {
+                                    "class": "org.kevoree.DictionaryAttribute@myAttr",
+                                    "fragmentDependant": "false",
+                                    "optional": "false",
+                                    "name": "myAttr",
+                                    "state": "false",
+                                    "datatype": "FLOAT",
+                                    "defaultValue": "",
+                                    "genericTypes": []
+                                }
+                            ]
+                        }
+                    ],
+                    "metaData": [
+                        {
+                            "class": "org.kevoree.Value@description",
+                            "name": "description",
+                            "value": "Kevoree component that proxy input messages to output - written in TypeScript"
+                        }
+                    ],
+                    "required": [
+                        {
+                            "class": "org.kevoree.PortTypeRef@proxy",
+                            "noDependency": "true",
+                            "optional": "true",
+                            "name": "proxy",
+                            "ref": [],
+                            "mappings": []
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "class": "org.kevoree.PortTypeRef@onMessage",
+                            "noDependency": "true",
+                            "optional": "true",
+                            "name": "onMessage",
+                            "ref": [],
+                            "mappings": []
+                        }
+                    ]
+                }
+            ],
+            "deployUnits": [
+                {
+                    "class": "org.kevoree.DeployUnit@hashcode=20dd759137fb8fd6960687ba6297be81,name=kevoree-comp-simpleproxy,version=1.0.0",
+                    "name": "kevoree-comp-simpleproxy",
+                    "hashcode": "20dd759137fb8fd6960687ba6297be81",
+                    "url": "",
+                    "version": "1.0.0",
+                    "requiredLibs": [],
+                    "filters": [
+                        {
+                            "class": "org.kevoree.Value@platform",
+                            "name": "platform",
+                            "value": "js"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "kevoree-comp-simpleproxy",
+  "version": "1.0.0",
+  "description": "Kevoree component that proxy input messages to output - written in TypeScript",
+  "main": "dist/SimpleProxy.js",
+  "kevoree": {
+    "namespace": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kevoree",
+    "example"
+  ],
+  "author": "Maxime Tricoire <max.tricoire@gmail.com>",
+  "license": "LGPL-3.0",
+  "dependencies": {
+    "kevoree-entities": "^9.0.0-alpha.2"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-kevoree": "^5.9.0-alpha.3",
+    "grunt-kevoree-genmodel": "^3.0.0"
+  }
+}
